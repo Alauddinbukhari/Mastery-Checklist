@@ -1,0 +1,173 @@
+
+## ✅ Flask Mastery Checklist 
+
+### **1. Core Fundamentals**
+
+- Understand Flask app structure:
+    - `app.py`
+    - `templates/`
+    - `static/`
+- Define routes using `@app.route`.
+- Handle **GET** and **POST** requests.
+- Use `render_template()` with Jinja2.
+
+---
+
+### **2. Request & Response Handling**
+
+- Access request data:
+    - Form data (`request.form`)
+    - Query parameters (`request.args`)
+    - JSON (`request.json`)
+- Return proper HTTP responses and status codes.
+- Handle redirects (`redirect`, `url_for`).
+- Create custom error pages (404, 500).
+
+---
+
+### **3. Templates & Jinja2**
+
+- Pass variables to templates.
+- Use:
+    - `{{ }}` → output
+    - `{% %}` → logic (loops, conditionals)
+- Implement template inheritance:
+    - `base.html`
+    - child templates using `{% extends %}`.
+
+---
+
+### **4. Application Structure**
+
+- Organize code using **Blueprints**.
+- Use `config.py` for:
+    - Development
+    - Testing
+    - Production environments.
+- Manage secrets using environment variables.
+
+---
+
+### **5. Database Integration**
+
+- Connect Flask with **SQLAlchemy**.
+- Perform full **CRUD operations**.
+- Use **Flask-Migrate** for database version control.
+
+---
+
+### **6. Middleware & Extensions**
+
+- Use popular Flask extensions:
+    - `Flask-Login`
+    - `Flask-WTF`
+    - `Flask-Mail`
+- Understand request → response lifecycle.
+- Add custom middleware logic.
+
+---
+
+### **7. Performance & Security**
+
+- Add logging and basic profiling.
+- Secure sessions and cookies.
+- Implement authentication & authorization:
+    - JWT
+    - OAuth2
+- Protect against:
+    - CSRF
+    - XSS
+    - SQL Injection
+
+---
+
+### **8. Deployment**
+
+- Run Flask with:
+    - **Gunicorn / uWSGI**
+    - **Nginx**
+- Containerize using **Docker**.
+- Deploy to:
+    - AWS
+    - Heroku
+    - Render
+
+---
+
+## 🎯 Rule of Thumb
+
+Before moving to **Django or FastAPI**, you should be able to:
+
+✅ Build a **complete application** (blog, task manager, portfolio).
+
+✅ Add **authentication + database integration**.
+
+✅ **Deploy** it to the cloud successfully.
+
+If you can do all of this confidently — you’ve officially **graduated from Flask** 🎓.
+
+---
+
+## 🚀 Mini Project Roadmap (Step-by-Step)
+
+### **Project: “Task Manager Web App”**
+
+### **Phase 1 – Core Setup**
+
+- Create Flask app structure
+- Setup routes (`/`, `/login`, `/register`)
+- Create basic HTML templates
+
+✅ Goal: App runs locally
+
+---
+
+### **Phase 2 – Database & Models**
+
+- Setup SQLAlchemy
+- Create models:
+    - User
+    - Task
+- Perform CRUD operations
+
+✅ Goal: Tasks can be added, edited, deleted
+
+---
+
+### **Phase 3 – Authentication**
+
+- Add login/signup system
+- Protect routes using Flask-Login
+- Hash passwords securely
+
+✅ Goal: Secure user access
+
+---
+
+### **Phase 4 – UI & Templates**
+
+- Use template inheritance
+- Add flash messages
+- Improve UI (Bootstrap or Tailwind)
+
+✅ Goal: Clean, user-friendly UI
+
+---
+
+### **Phase 5 – Security & Optimization**
+
+- CSRF protection
+- Input validation
+- Error handling (404/500)
+
+✅ Goal: Safe and stable app
+
+---
+
+### **Phase 6 – Deployment**
+
+- Dockerize the app
+- Deploy to Render / AWS
+- Setup environment variables
+
+✅ Goal: Live production app
